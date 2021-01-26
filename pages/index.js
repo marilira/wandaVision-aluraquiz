@@ -31,19 +31,19 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Lorem Impsum</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           
           <Widget.Content>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facilis debitis error reiciendis tempore.</p>
+            <p>{db.description}</p>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Lorem Impsum</h1>
+            <h1>Quizes da galera</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facilis debitis error reiciendis tempore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </Widget.Content>
         </Widget>
         <Footer />
