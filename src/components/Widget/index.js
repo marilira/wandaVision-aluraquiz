@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -8,17 +8,24 @@ const Widget = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBg};
   overflow: hidden;
 
-  h1, h2, h3 {
-    font-size: 16px;
+  h1, h3 {
+    font-size: 18px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
   }
 
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.2;
   }
 `;
 

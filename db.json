@@ -28,22 +28,22 @@
         ]
       },
       {
-        "image": "",
+        "image": "https://www.einerd.com.br/wp-content/uploads/2021/01/WandaVision-Agnes.jpg",
         "title": "Qual o nome do misterioso marido de Agnes?",
         "description": "",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
-          "",
-          "",
-          "",
-          ""
+          "Norm",
+          "Tom",
+          "Half",
+          "Robert"
         ]
       },
       {
         "image": "https://cafecomnerd.com.br/wp-content/uploads/2021/01/wandavision-o-que-geraldine-disse-a-wanda.jpg",
         "title": "O que fez Wanda expulsar Geraldine de sua Casa?",
         "description": "",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
           "Geraldine a agrediu",
           "Agnes denunciou Geraldine",
@@ -65,12 +65,14 @@
       }
     ],
     "external": [
+      "https://miziaraquiz.thiagonmiziara.vercel.app/",
+      "https://typequiz.caducarvalho.vercel.app/",
       ""
     ],
     "theme": {
       "colors": {
         "primary": "#C40640",
-        "secondary": "#1E1A6A",
+        "secondary": "#302297",
         "mainBg": "#0D0721",
         "contrastText": "#FFFFFF",
         "wrong": "#A9A9A9",
