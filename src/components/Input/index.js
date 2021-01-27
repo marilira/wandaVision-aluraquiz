@@ -1,23 +1,41 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Input = styled.input`
-    height: 38px;
-    width: 281px;
-    left: 1px;
-    top: 1px;
-    
+const InputBase = styled.input`
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+
     background-color: ${({ theme }) => theme.colors.mainBg};
     border: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: ${({ theme }) => theme.borderRadius};
 
-    border-radius: 0px;
-    margin-top: 16px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+    outline: 0;
     color: #F9F9FF;
     font-size: 14px;
 `;
 
-export default Input;
+export default function Input({ onChange, placeholder, ...props }) {
+    return (
+        <div>
+            <InputBase 
+                placeholder={placeholder}
+                onChange={onChange}
+                {...props}
+            />
+        </div>
+    );
+}
+
+Input.defaultProps = {
+    value: '',
+};
+
+Input.propTypes = {
+    onChange: PropTypes.func.isRequired,
+    placeholder: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+};

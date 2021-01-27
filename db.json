@@ -29,7 +29,7 @@
       },
       {
         "image": "https://www.einerd.com.br/wp-content/uploads/2021/01/WandaVision-Agnes.jpg",
-        "title": "Qual o nome do misterioso marido de Agnes?",
+        "title": "Qual o nome do misterioso marido da Agnes?",
         "description": "",
         "answer": 2,
         "alternatives": [
@@ -67,7 +67,8 @@
     "external": [
       "https://miziaraquiz.thiagonmiziara.vercel.app/",
       "https://typequiz.caducarvalho.vercel.app/",
-      ""
+      "https://universe-quiz.gustavoherreronunes.vercel.app/",
+      "https://quiz-cavaleiro-zodiaco.vercel.app/"
     ],
     "theme": {
       "colors": {

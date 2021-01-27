@@ -38,15 +38,21 @@ Repositório da imersão: https://github.com/alura-challenges/aluraquiz-base
 
 * Next: latest
 * React: 16.8.0
-* React-dom: 16.8.0
-* React-is: 16.8.0
 * Styled-components: 5.0.0
 
 ## Setup
 
 - Clone este repositório
 ```bash
-git clone https://github.com/marilira/wandaVision-aluraquiz
+git clone https://github.com/marilira/wandaVision-aluraquiz.git
+```
+- Instale as dependências
+```bash
+yarn install
+```
+ou
+```bash
+npm install
 ```
 - Rode o projeto
 ```bash
