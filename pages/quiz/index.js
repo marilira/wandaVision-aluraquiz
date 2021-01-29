@@ -1,13 +1,14 @@
 import React from "react";
 
-import db from "../db.json";
-import GitHubCorner from "../src/components/GitHubCorner";
-import QuizBackground from "../src/components/QuizBackground";
-import QuizLogo from "../src/components/QuizLogo";
-import Widget from "../src/components/Widget";
-import Button from "../src/components/Button";
-import QuizContainer from "../src/components/QuizContainer";
-import AlternativesForm from "../src/components/AlternativesForm";
+import db from "../../db.json";
+import GitHubCorner from "../../src/components/GitHubCorner";
+import QuizBackground from "../../src/components/QuizBackground";
+import QuizLogo from "../../src/components/QuizLogo";
+import Widget from "../../src/components/Widget";
+import Button from "../../src/components/Button";
+import QuizContainer from "../../src/components/QuizContainer";
+import AlternativesForm from "../../src/components/AlternativesForm";
+import BackLinkArrow from "../../src/components/BackLinkArrow";
 
 function ResultWidget({ results }) {
   return (
@@ -67,6 +68,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
 

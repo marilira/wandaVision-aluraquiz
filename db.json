@@ -57,10 +57,10 @@
         "description": "",
         "answer": 0,
         "alternatives": [
-          "SWORD",
-          "HYDRA",
-          "MAGNET",
-          "SHIELD"
+          "S.W.O.R.D.",
+          "H.Y.D.R.A.",
+          "M.A.G.N.E.T.",
+          "S.H.I.E.L.D."
         ]
       }
     ],
@@ -68,7 +68,11 @@
       "https://miziaraquiz.thiagonmiziara.vercel.app/",
       "https://typequiz.caducarvalho.vercel.app/",
       "https://universe-quiz.gustavoherreronunes.vercel.app/",
-      "https://quiz-cavaleiro-zodiaco.vercel.app/"
+      "https://quiz-cavaleiro-zodiaco.vercel.app/",
+      "https://aluraquiz.edilson-rodrigues.vercel.app/",
+      "https://divequiz.fncarneiro.vercel.app/",
+      "https://imersao-react.palomacorreia.vercel.app/",
+      "https://ai-quiz.idcesares.vercel.app/"
     ],
     "theme": {
       "colors": {
