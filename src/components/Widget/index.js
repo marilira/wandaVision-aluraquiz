@@ -19,7 +19,7 @@ const Widget = styled.div`
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
   }
 
   p {

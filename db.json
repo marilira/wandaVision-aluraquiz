@@ -65,14 +65,8 @@
       }
     ],
     "external": [
-      "https://miziaraquiz.thiagonmiziara.vercel.app/",
-      "https://typequiz.caducarvalho.vercel.app/",
-      "https://universe-quiz.gustavoherreronunes.vercel.app/",
-      "https://quiz-cavaleiro-zodiaco.vercel.app/",
-      "https://aluraquiz.edilson-rodrigues.vercel.app/",
-      "https://divequiz.fncarneiro.vercel.app/",
-      "https://imersao-react.palomacorreia.vercel.app/",
-      "https://ai-quiz.idcesares.vercel.app/"
+      "https://lotr-quiz.filipe1309.vercel.app/",
+      "https://typequiz.caducarvalho.vercel.app/"
     ],
     "theme": {
       "colors": {
@@ -80,7 +74,7 @@
         "secondary": "#302297",
         "mainBg": "#0D0721",
         "contrastText": "#FFFFFF",
-        "wrong": "#A9A9A9",
+        "wrong": "#DF0101",
         "success": "#1F7329"
       },
       "borderRadius": "4px"

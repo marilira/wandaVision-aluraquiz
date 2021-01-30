@@ -3,7 +3,7 @@ import React from "react";
 import db from "../../db.json";
 import GitHubCorner from "../../src/components/GitHubCorner";
 import QuizBackground from "../../src/components/QuizBackground";
-import QuizLogo from "../../src/components/QuizLogo";
+//import QuizLogo from "../../src/components/QuizLogo";
 import Widget from "../../src/components/Widget";
 import Button from "../../src/components/Button";
 import QuizContainer from "../../src/components/QuizContainer";
@@ -11,32 +11,21 @@ import AlternativesForm from "../../src/components/AlternativesForm";
 import BackLinkArrow from "../../src/components/BackLinkArrow";
 
 function ResultWidget({ results }) {
+  const CorrectAnswers = results.filter((x) => x).length;
   return (
     <Widget>
       <Widget.Header>Resultado</Widget.Header>
 
       <Widget.Content>
-        <p>
-          Você acertou
-          {' '} 
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcertou = resultAtual === true;
-            if(isAcertou){
-              return somatoriaAtual + 1
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
+        <h2>{`Você acertou ${CorrectAnswers} perguntas`}</h2>
         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
-              #{index + 1}Resultado: {result === true ? 'acertou' : 'errou'}
+              #{index + 1} Pergunta: {result === true ? 'Certa resposta' : 'Resposta errada'}
             </li>
           ))}
         </ul>
+        <a href="/quiz"><Button>Jogar Novamente</Button></a>
       </Widget.Content>
     </Widget>
   );
@@ -47,7 +36,10 @@ function LoadingWidget() {
     <Widget>
       <Widget.Header>Carregando...</Widget.Header>
 
-      <Widget.Content>[Desafio do Loading]</Widget.Content>
+      <Widget.Content>
+        <iframe src="https://giphy.com/embed/lRjwXH9Thxz6DiWmyG" width="100%" height="100%" frameBorder="0">
+        </iframe>
+      </Widget.Content>
     </Widget>
   );
 }
@@ -93,7 +85,7 @@ function QuestionWidget({
               onSubmit();
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 2 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -120,8 +112,8 @@ function QuestionWidget({
             );
           })}
           <Button type="submit" disabled={!hasAlternativeSelected}>Confirmar</Button>
-          {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-          {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+          {isQuestionSubmited && isCorrect }
+          {isQuestionSubmited && !isCorrect }
         </AlternativesForm>
         
         {/*<pre>
@@ -158,7 +150,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 2 * 1000);
   // nasce === didMount
   }, []);
 
@@ -174,7 +166,6 @@ export default function QuizPage() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <QuizLogo />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget 
             question={question}
